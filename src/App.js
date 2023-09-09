@@ -1,5 +1,7 @@
 
 import './App.css';
+import TaskList from './Component/TaskList';
+
 
 function App() {
 
@@ -17,7 +19,7 @@ function App() {
         <input type="text" placeholder='Enter your Description here' />
         <button onClick={addTask}>Add task </button>
       </div>
-
+      <TaskList />
     </div>
   );
 }
