@@ -3,12 +3,23 @@ import TaskCard from "./TaskCard";
 import "./css/TaskList.css";
 
 const TaskList = () => {
+
+    const dragStarted = (e) => {
+        e.preventDefault();
+        console.log("drag started");
+    }
+
+    const drageComplete = (e) => {
+        let taskid = e.dataTransfer.getData('taskid');
+        console.log("You have Dropped an item");
+    }
+
     return <div className="main">
         <div className="TOdo">
             <h5>Todo</h5>
-            <TaskCard />
+            <TaskCard id={1} />
         </div>
-        <div className="Doing">
+        <div onDragOver={(e) => dragStarted(e)} onDrop={(e) => drageComplete(e)} className="Doing">
             <h5>Doing</h5>
 
         </div>
