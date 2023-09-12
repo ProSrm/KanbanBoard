@@ -13,3 +13,21 @@
     min-width: 60vh;
     margin: 2px;
 }
+
+
+@media (max-width: 768px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+    .TOdo,
+    .Doing,
+    .Done {
+        min-height: auto;
+        min-width: 90%;
+        margin: 10px 0;
+    }
+
+
+}

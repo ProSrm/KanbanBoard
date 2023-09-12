@@ -36,3 +36,24 @@ h4 {
 .App-link {
   color: #61dafb;
 }
+
+
+@media (max-width: 768px) {
+
+  .App-header {
+    background-color: #282c34;
+    min-height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    width: 90%;
+    max-width: 300px;
+  }
+
+
+}
